@@ -5,35 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Manrope">
+
+  <link rel="stylesheet" href="main.css">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
+<div class="container">
+  <header>
+    <h2><strong>Simple, traffic-based pricing</strong></h2>
+    <p>Sign-up for our 30-day trial. No credit card required.</p> 
+  </header>
+  <main>
+    <div class="overview">
+      <div class="views">  
+        <p id="page-views">100k Pageviews</p>
+      </div>
+      <div class="pricing">
+        <h2 id="price">$16.00</h2> <p>/ month</p>
+      </div>
+    <div class="ranger">
+        <input type="range" class="range1" min="0" max="1000" value="100" oninput="adjustOverview()">
+    </div>
+    </div>
+    <div class="select"> 
+    <small>Monthly Billing</small>
+    <label class="switch">
+      <input type="checkbox" id="yearly-sub" onclick="adjustOverview()">
+      <span class="slider round"></span>
+    </label>
+    <small>Yearly Billing</small> 
+    <small id="d-discount">25% discount</small>
+    <small id="m-discount">-25%</small>
+    </div>
+    <hr>
+    <div class="trial">
+      <ul class="list">
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <button>
+      Start my trial
+    </button>
+    <script src="app.js"></script>  
+    </div>
+  </main>
+</div>
 </body>
 </html>
