@@ -124,7 +124,7 @@ hr {
 .select small {
 	color: hsl(225, 20%, 60%);
 	font-weight: 600;
-	margin: 0 3px 0 3px;
+	margin: 0 3% 0 3%;
 	font-size: 12px; 
 }
 .trial {
@@ -148,9 +148,9 @@ hr {
 #m-discount {
 	display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	#m-discount {
-		margin-right: 7px;
+		margin: 0 6% 0 0;
 		display: inline-flex;
 		background-color: hsl(14, 92%, 95%);
 		border-radius: 10px;
@@ -161,14 +161,14 @@ hr {
 }
 #d-discount {
 	display: inline-flex;
-	margin-right: 7px;
+	margin: 0 12% 0 0;
 	background-color: hsl(14, 92%, 95%);
 	border-radius: 10px;
 	color: hsl(15, 100%, 70%);
 	padding: 2px;
 
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	#d-discount {
 		display: none;
 	}
