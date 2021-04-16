@@ -54,5 +54,5 @@ A lot more comfortable with CSS layout. I will continue going foward with JavaSc
 
 ## Author
 
-- Website - [Ramses' Portfolio](https://ramsesportfolio.com)
+- Website - [Ramses' Portfolio](https://www.ramsesportfolio.com)
 - Frontend Mentor - [@rlarabel](https://www.frontendmentor.io/profile/rlarabel)
